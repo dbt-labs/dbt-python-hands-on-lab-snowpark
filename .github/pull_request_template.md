@@ -1,3 +1,4 @@
+
 ## About the project
 This repository is a code incomplete project that is used to create a fork in this [Snowflake quickstart](https://quickstarts.snowflake.com/guide/leverage_dbt_cloud_to_generate_ml_ready_pipelines_using_snowpark_python/index.html?index=..%2F..index#0). 
 
@@ -67,7 +68,6 @@ To make a contribution follow these steps:
 
 ## Contact
 Hope Watson &mdash; [LinkedIn](https://www.linkedin.com/in/hopewatson/)
-[dbt slack community](https://www.getdbt.com/community/)
 
 ## Acknowledgments
 
