@@ -1,1 +1,3 @@
-select * from {{ ref('agg_lap_times_moving_avg') }}
+--select * from {{ ref('apply_prediction_to_position') }}
+
+select * from {{ ref('apply_prediction_to_position') }} order by position_predicted
