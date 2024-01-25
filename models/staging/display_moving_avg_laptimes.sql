@@ -1,0 +1,1 @@
+select * from {{ ref('agg_lap_times_moving_avg') }}
