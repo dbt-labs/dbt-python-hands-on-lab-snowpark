@@ -24,6 +24,8 @@ def model(dbt, session):
     mapping = {'Force India': 'Racing Point', 'Sauber': 'Alfa Romeo', 'Lotus F1': 'Renault', 'Toro Rosso': 'AlphaTauri'}
     data['CONSTRUCTOR_NAME'].replace(mapping, inplace=True)
 
+    data['DNF_FLAG'] = pd.to_datetime(data['DNF_FLAG'])
+    
     # create confidence metrics for drivers and constructors
     dnf_by_driver = data.groupby('DRIVER').sum()['DNF_FLAG']
     driver_race_entered = data.groupby('DRIVER').count()['DNF_FLAG']
